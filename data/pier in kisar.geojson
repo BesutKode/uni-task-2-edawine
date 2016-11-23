@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-11-20T00:59:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/195711541",
+      "properties": {
+        "@id": "way/195711541",
+        "man_made": "pier"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1463831,
+            -8.0799917
+          ],
+          [
+            127.1475648,
+            -8.0796063
+          ]
+        ]
+      }
+    }
+  ]
+}

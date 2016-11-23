@@ -1,0 +1,5 @@
+way[name="Pulau Kisar"];
+/*added by auto repair*/
+(._;>;);
+/*end of auto repair*/
+out;

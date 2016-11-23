@@ -1,0 +1,72 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-11-20T00:16:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/432848496",
+      "properties": {
+        "@id": "way/432848496",
+        "aeroway": "aerodrome"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              127.2048713,
+              -8.0174001
+            ],
+            [
+              127.1956377,
+              -8.0135427
+            ],
+            [
+              127.1952256,
+              -8.013885
+            ],
+            [
+              127.2035684,
+              -8.0173672
+            ],
+            [
+              127.2040935,
+              -8.0179268
+            ],
+            [
+              127.2043395,
+              -8.0175384
+            ],
+            [
+              127.204745,
+              -8.0177424
+            ],
+            [
+              127.2048713,
+              -8.0174001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1042092732",
+      "properties": {
+        "@id": "node/1042092732",
+        "aeroway": "aerodrome",
+        "name": "Kisar Airport",
+        "source": "ourairports.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.1987111,
+          -8.0165935
+        ]
+      }
+    }
+  ]
+}

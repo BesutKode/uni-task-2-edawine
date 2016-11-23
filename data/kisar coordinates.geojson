@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-11-23T09:23:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/931542927",
+      "properties": {
+        "@id": "node/931542927",
+        "gns:dsg": "ISL",
+        "is_in:country": "Indonesia",
+        "is_in:country_code": "ID",
+        "is_in:state": "Province of Maluku",
+        "name": "Pulau Kisar",
+        "note": "GNS database update - Sept 20, 2010",
+        "place": "island",
+        "source": "NGA-GNS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.166667,
+          -8.083333
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-11-20T00:12:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/1070155110",
+      "properties": {
+        "@id": "node/1070155110",
+        "gns:dsg": "MT",
+        "is_in:country": "Indonesia",
+        "is_in:country_code": "ID",
+        "name": "Lebalau",
+        "natural": "peak",
+        "note": "Modify date: 1994-01-29",
+        "source": "NGA-GNS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15,
+          -8.033333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1070161003",
+      "properties": {
+        "@id": "node/1070161003",
+        "gns:dsg": "MT",
+        "is_in:country": "Indonesia",
+        "is_in:country_code": "ID",
+        "is_in:state": "Maluku",
+        "name": "Gunung Tailutu",
+        "natural": "peak",
+        "note": "Modify date: 2008-12-01",
+        "source": "NGA-GNS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.1625,
+          -8.045833
+        ]
+      }
+    }
+  ]
+}
