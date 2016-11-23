@@ -1,0 +1,214 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_0d41180852d14aeebd69741033a38ddc {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_0d41180852d14aeebd69741033a38ddc" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_0d41180852d14aeebd69741033a38ddc = L.map('map_0d41180852d14aeebd69741033a38ddc', {
+                                           center:[-8.083333,127.166667],
+                                           zoom: 10,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_7a901ebc47c44710a467292459d86be2 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_0d41180852d14aeebd69741033a38ddc);
+
+        
+        
+            
+                var geo_json_dd670698f48548718729dcea8ef82b88 = L.geoJson(
+                    {"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.", "features": [{"geometry": {"coordinates": [[[127.2108306, -8.1060255], [127.2113519, -8.1051255], [127.2136823, -8.1043627], [127.2248017, -8.1041536], [127.2291933, -8.105075], [127.2308815, -8.1032786], [127.2324462, -8.1001931], [127.2332477, -8.0942701], [127.232742, -8.0916912], [127.2319695, -8.0909147], [127.2318465, -8.0896258], [127.230041, -8.0885872], [127.2300432, -8.088072], [127.2228151, -8.0854638], [127.2228172, -8.0849484], [127.2217841, -8.0846862], [127.2217864, -8.0841708], [127.2192066, -8.0828713], [127.2177943, -8.080546], [127.21514, -8.0668775], [127.2141058, -8.0668732], [127.213983, -8.0653264], [127.2145035, -8.0645557], [127.2140066, -8.0599153], [127.2145666, -8.0501261], [127.2140552, -8.0488356], [127.214728, -8.042912], [127.2152449, -8.0429142], [127.2156401, -8.0411121], [127.2152385, -8.0365696], [127.2155842, -8.0353831], [127.2152053, -8.0348697], [127.2151455, -8.0346524], [127.2154513, -8.0345734], [127.2150313, -8.0339152], [127.2133785, -8.03364], [127.2127027, -8.0331114], [127.2120519, -8.0321684], [127.2114361, -8.0317957], [127.2104788, -8.0318549], [127.2100433, -8.032383], [127.2093476, -8.0318084], [127.209229, -8.0313941], [127.2087172, -8.0309399], [127.2074578, -8.0303795], [127.2069622, -8.0291561], [127.206231, -8.0266482], [127.2056348, -8.0235466], [127.2064182, -8.0217462], [127.2053177, -8.0177972], [127.2046015, -8.0166044], [127.2036725, -8.0156937], [127.2029006, -8.0149996], [127.2012328, -8.0140289], [127.1989872, -8.013314], [127.1979552, -8.0133456], [127.1960287, -8.013203], [127.1938714, -8.0135751], [127.192325, -8.0137491], [127.1903207, -8.0143514], [127.1898653, -8.014572], [127.1895762, -8.0148912], [127.189626, -8.0150657], [127.1894133, -8.0151315], [127.1893102, -8.0149208], [127.1893834, -8.0146608], [127.1892309, -8.0145573], [127.1830552, -8.0145574], [127.1822792, -8.0146833], [127.1822803, -8.0144257], [127.1825389, -8.0144268], [127.18254, -8.014169], [127.1781501, -8.0131189], [127.1778881, -8.0138908], [127.1706474, -8.0145024], [127.1701285, -8.0148872], [127.1701308, -8.0143718], [127.166254, -8.0142253], [127.1628866, -8.0157562], [127.1608175, -8.0160048], [127.160039, -8.0166459], [127.1596358, -8.0199938], [127.1592461, -8.0205075], [127.155881, -8.021523], [127.1556179, -8.0225525], [127.1551008, -8.0225502], [127.1550985, -8.0230656], [127.1514737, -8.0243376], [127.1512104, -8.0253671], [127.1493981, -8.0260027], [127.1473225, -8.0276687], [127.1447222, -8.0310067], [127.1442051, -8.0310042], [127.1439432, -8.0317761], [127.1423915, -8.0318974], [127.1372055, -8.0353529], [127.1357704, -8.0381807], [127.1357621, -8.0399843], [127.136665, -8.0405039], [127.1372709, -8.0492673], [127.1381654, -8.0515903], [127.1393236, -8.0526262], [127.13905, -8.0559747], [127.1398207, -8.0570087], [127.1398173, -8.0577817], [127.140843, -8.0595901], [127.1408383, -8.0606207], [127.1416103, -8.0613973], [127.1427355, -8.0699053], [127.1432524, -8.0699076], [127.147217, -8.0792017], [127.1468248, -8.0802306], [127.1473414, -8.0803612], [127.1482357, -8.0825558], [127.1478203, -8.088738], [127.1462648, -8.0896324], [127.1441906, -8.0909113], [127.1434143, -8.091037], [127.142496, -8.0938671], [127.1432541, -8.0977356], [127.1445408, -8.0990298], [127.1445385, -8.099545], [127.1451841, -8.0998057], [127.1453106, -8.1003216], [127.1472406, -8.1023918], [127.15241, -8.1028013], [127.1583455, -8.1052765], [127.1583491, -8.1045035], [127.1588626, -8.1052787], [127.1593803, -8.1051517], [127.165581, -8.1062105], [127.1671335, -8.1059597], [127.1707517, -8.106363], [127.1707481, -8.1071359], [127.1790214, -8.1073014], [127.1813531, -8.106281], [127.1896258, -8.1065757], [127.1911737, -8.1073555], [127.1982854, -8.1070009], [127.1984175, -8.1064863], [127.1986761, -8.1064874], [127.1988906, -8.1071796], [127.2090386, -8.1067863], [127.2108306, -8.1060255]]], "type": "Polygon"}, "id": "way/25870936", "properties": {"@id": "way/25870936", "name": "Pulau Kisar", "name:en": "Kisar Island", "natural": "coastline", "place": "island", "source": "PGS", "style": {}, "wikipedia": "en:Kisar"}, "type": "Feature"}], "generator": "overpass-turbo", "timestamp": "2016-11-19T23:11:02Z", "type": "FeatureCollection"})
+                    .addTo(map_0d41180852d14aeebd69741033a38ddc);
+                geo_json_dd670698f48548718729dcea8ef82b88.setStyle(function(feature) {return feature.properties.style;});
+            
+        
+            
+                var geo_json_e40c9c26ef7a40d4acd304a9ae0eb047 = L.geoJson(
+                    {"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.", "features": [{"geometry": {"coordinates": [127.15, -8.033333], "type": "Point"}, "id": "node/1070155110", "properties": {"@id": "node/1070155110", "gns:dsg": "MT", "is_in:country": "Indonesia", "is_in:country_code": "ID", "name": "Lebalau", "natural": "peak", "note": "Modify date: 1994-01-29", "source": "NGA-GNS", "style": {}}, "type": "Feature"}, {"geometry": {"coordinates": [127.1625, -8.045833], "type": "Point"}, "id": "node/1070161003", "properties": {"@id": "node/1070161003", "gns:dsg": "MT", "is_in:country": "Indonesia", "is_in:country_code": "ID", "is_in:state": "Maluku", "name": "Gunung Tailutu", "natural": "peak", "note": "Modify date: 2008-12-01", "source": "NGA-GNS", "style": {}}, "type": "Feature"}], "generator": "overpass-turbo", "timestamp": "2016-11-20T00:12:03Z", "type": "FeatureCollection"})
+                    .addTo(map_0d41180852d14aeebd69741033a38ddc);
+                geo_json_e40c9c26ef7a40d4acd304a9ae0eb047.setStyle(function(feature) {return feature.properties.style;});
+            
+        
+            
+                var geo_json_93eee30df7a84cdfa6dc299c81734cbc = L.geoJson(
+                    {"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.", "features": [{"geometry": {"coordinates": [[127.1463831, -8.0799917], [127.1475648, -8.0796063]], "type": "LineString"}, "id": "way/195711541", "properties": {"@id": "way/195711541", "man_made": "pier", "style": {}}, "type": "Feature"}], "generator": "overpass-turbo", "timestamp": "2016-11-20T00:59:03Z", "type": "FeatureCollection"})
+                    .addTo(map_0d41180852d14aeebd69741033a38ddc);
+                geo_json_93eee30df7a84cdfa6dc299c81734cbc.setStyle(function(feature) {return feature.properties.style;});
+            
+        
+            
+                var geo_json_bceeec509cc2461b9a76b96530072346 = L.geoJson(
+                    {"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.", "features": [{"geometry": {"coordinates": [[[127.2048713, -8.0174001], [127.1956377, -8.0135427], [127.1952256, -8.013885], [127.2035684, -8.0173672], [127.2040935, -8.0179268], [127.2043395, -8.0175384], [127.204745, -8.0177424], [127.2048713, -8.0174001]]], "type": "Polygon"}, "id": "way/432848496", "properties": {"@id": "way/432848496", "aeroway": "aerodrome", "style": {}}, "type": "Feature"}, {"geometry": {"coordinates": [127.1987111, -8.0165935], "type": "Point"}, "id": "node/1042092732", "properties": {"@id": "node/1042092732", "aeroway": "aerodrome", "name": "Kisar Airport", "source": "ourairports.com", "style": {}}, "type": "Feature"}], "generator": "overpass-turbo", "timestamp": "2016-11-20T00:16:02Z", "type": "FeatureCollection"})
+                    .addTo(map_0d41180852d14aeebd69741033a38ddc);
+                geo_json_bceeec509cc2461b9a76b96530072346.setStyle(function(feature) {return feature.properties.style;});
+            
+        
+            
+                var geo_json_734462218c9340a78d6094d670882da5 = L.geoJson(
+                    {"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.", "features": [{"geometry": {"coordinates": [[[127.1884287, -8.0634076], [127.1882027, -8.0634142], [127.1880498, -8.0631773], [127.1881096, -8.0630061], [127.1879767, -8.0630654], [127.1873451, -8.0628679], [127.1868665, -8.0628679], [127.1870194, -8.063118], [127.1872986, -8.0631773], [127.1875113, -8.0632431], [127.1876709, -8.0634735], [127.1877972, -8.0638815], [127.1883689, -8.0638684], [127.1885683, -8.0637894], [127.1885749, -8.0636051], [127.1884287, -8.0634076]]], "type": "Polygon"}, "id": "way/432848483", "properties": {"@id": "way/432848483", "natural": "water", "source": "bing", "style": {}}, "type": "Feature"}], "generator": "overpass-turbo", "timestamp": "2016-11-20T00:33:02Z", "type": "FeatureCollection"})
+                    .addTo(map_0d41180852d14aeebd69741033a38ddc);
+                geo_json_734462218c9340a78d6094d670882da5.setStyle(function(feature) {return feature.properties.style;});
+            
+        
+            
+            var layer_control_cf79676964354d96ae38fa8d2826268a = {
+                base_layers : { "openstreetmap" : tile_layer_7a901ebc47c44710a467292459d86be2, },
+                overlays : { "way" : geo_json_dd670698f48548718729dcea8ef82b88,"peak" : geo_json_e40c9c26ef7a40d4acd304a9ae0eb047,"pier" : geo_json_93eee30df7a84cdfa6dc299c81734cbc,"airport" : geo_json_bceeec509cc2461b9a76b96530072346,"water" : geo_json_734462218c9340a78d6094d670882da5, }
+                };
+            L.control.layers(
+                layer_control_cf79676964354d96ae38fa8d2826268a.base_layers,
+                layer_control_cf79676964354d96ae38fa8d2826268a.overlays
+                ).addTo(map_0d41180852d14aeebd69741033a38ddc);
+        
+        
+        
+        </script>
+        
